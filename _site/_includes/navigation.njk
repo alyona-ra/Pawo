@@ -1,0 +1,20 @@
+<nav id="js-nav" class="nav">
+    <ul class="list">
+      {% set mainNav = collections.all | eleventyNavigation('main') %}
+      {%- for nav in mainNav -%}
+        <li>
+          <a href="{{nav.url}}">{{ nav.key }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+</nav>
+<nav id="no-js-nav">
+    <ul>
+      {% set mainNav = collections.all | eleventyNavigation('main') %}
+      {%- for nav in mainNav -%}
+        <li>
+          <a href="{{nav.url}}">{{ nav.key }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+</nav>

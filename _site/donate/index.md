@@ -1,0 +1,28 @@
+---
+eleventyNavigation:
+  key: Donate
+  parent: main
+layout: base
+---
+
+<div class="donate-text-wrapper">
+  <h1>We...They need your money</h1>
+  <p>Each month we will send all your donations to a new organization to help cute creatures. Give them your money. All
+    of them. </p>
+</div>
+
+<div class="donate-wrapper">
+  <h2 class="header">Here you can donate to support the furry!</h2>
+  <p class="input-title">Card number</p>
+  <input type="text" placeholder="1234 5678 9000 0000" class="card">
+  <p class="input-title">Cardholder name</p>
+  <input type="text" placeholder="JOHN SMITH" class="all-caps">
+  <p class="input-title">Donation amount</p>
+  <input type="text" value="$" class="amount">
+  <p class="input-title">Want to include a message?</p>
+  <textarea></textarea>
+  <a href="/thanks">
+    <button>DONATE</button>
+  </a>
+</div>
+<script src="/js/donate.js"></script>

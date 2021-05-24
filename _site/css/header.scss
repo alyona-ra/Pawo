@@ -1,0 +1,171 @@
+@import "./variables.scss";
+
+header {
+  width: 100%;
+  height: 100px;
+  padding: 0 50px 0 50px;
+  background-color: $purple;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+
+  a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    #logo {
+      height: 150%;
+      width: auto;
+    }
+
+    .brand-name {
+      display: flex;
+      font-size: 3rem;
+      font-weight: 200;
+
+      p {
+        color: white;
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+nav {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  ul {
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+
+    li {
+      list-style-type: none;
+      margin-right: 20px;
+
+      a,
+      a:visited {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 300;
+        ;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .branding a .brand-name {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #no-js-nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #js-hamburger,
+  #js-nav {
+    display: none;
+  }
+}
+
+.nav {
+  background: $purple;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100vh;
+  transition: transform 0.7s, opacity 1s;
+  transform: translateX(100%);
+  opacity: 0;
+  z-index: 10;
+}
+
+.nav.show {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  margin-right: 20px;
+}
+
+.list li {
+  margin: 1.5rem auto;
+  font-size: 1.25rem;
+}
+
+.hamburger {
+  position: relative;
+  margin-left: auto;
+  width: 45px;
+  height: 35px;
+  z-index: 11;
+}
+
+.hamburger span {
+  position: absolute;
+  left: 0;
+  background: #ffffff;
+  width: inherit;
+  height: 5px;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.top-line {
+  top: 0px;
+}
+
+.center-line {
+  top: 15px;
+}
+
+.bottom-line {
+  bottom: 0px;
+}
+
+.top-line.active {
+  transform: translateY(15px) rotate(45deg);
+}
+
+.center-line.active {
+  opacity: 0;
+}
+
+.bottom-line.active {
+  transform: translateY(-15px) rotate(-45deg);
+}
+
+#js-hamburger {
+  background: none;
+  border: none;
+  appearance: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}

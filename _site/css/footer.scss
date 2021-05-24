@@ -1,0 +1,50 @@
+@import './variables.scss';
+
+footer {
+  background-color: $purple;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: white;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 100;
+
+  .links-wrapper {
+    margin-top: 20px;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 4fr;
+    column-gap: 20px;
+    padding: 0px 100px 0px 100px;
+
+    .copyright {
+      align-self: center;
+    }
+
+    .contact {
+      .contact-text {
+        font-size: 1.1rem;
+        font-weight: 300;
+        margin-bottom: 0;
+       }
+
+       .email {
+         margin-top: 0;
+       }
+    }
+
+    .social {
+      align-self: center;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  footer .links-wrapper {
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 10px 0px 10px;
+  }
+}

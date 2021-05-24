@@ -55,6 +55,8 @@ async function searchForBreedsByName(name) {
   breedName.classList.add('name');
   breedName.textContent = json[0].name;
 
+  console.log(json);
+  
   const breedDescription = document.createElement('p');
   breedDescription.classList.add('description');
   breedDescription.textContent = json[0].description;
@@ -65,7 +67,7 @@ async function searchForBreedsByName(name) {
 
   const breedLifeSpan = document.createElement('p');
   breedLifeSpan.classList.add('lifespan');
-  breedLifeSpan.textContent = json[0].lifespan;
+  breedLifeSpan.textContent = `Life Span: ${json[0].life_span} years`;
 
   const breedTemperament = document.createElement('p');
   breedTemperament.classList.add('temperament');
@@ -73,7 +75,7 @@ async function searchForBreedsByName(name) {
 
   const breedWeight = document.createElement('p');
   breedWeight.classList.add('weight');
-  breedWeight.textContent = `Average weight: ${json[0].weight.metric}kg`;
+  breedWeight.textContent = `Average weight: ${json[0].weight.metric} kg`;
 
   const breedLink = document.createElement('a');
   breedLink.classList.add('link');

@@ -6,9 +6,8 @@ layout: base
 ---
 
 <div class="donate-text-wrapper">
-  <h1>We...They need your money</h1>
-  <p>Each month we will send all your donations to a new organization to help cute creatures. Give them your money. All
-    of them. </p>
+  <h1>Donate</h1>
+  <p>Donate to Pawo means support those who can't do it themselves.</p>
 </div>
 
 <div class="donate-wrapper">

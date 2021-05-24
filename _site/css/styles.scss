@@ -53,6 +53,13 @@ main {
     padding: 10px 10px 0 10px;
     margin: 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+      transform: scale(1.1, 1.1);
+    }
 
     img {
       width: 280px;
@@ -72,7 +79,7 @@ main {
 /* Breeds page */
 .breeds-wrapper {
   width: 100%;
-  padding: 0 100px;
+  padding: 0 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,24 +87,27 @@ main {
 
   .input-wrapper {
     margin-top: 30px;
-    max-width: 300px;
+    max-width: 400px;
     display: flex;
     align-items: center;
+    // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
     input {
       border: none;
-      border-radius: 7px 0px 0px 7px;
-      height: 30px;
-      width: 250px;
+      border-radius: 2px 0px 0px 2px;
+      height: 40px;
+      width: 350px;
       outline: none;
       padding-left: 5px;
-      border: 1px solid rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      font-weight: 300;
     }
 
     button {
-      height: 30px;
+      height: 40px;
+      width: 70px;
       padding: 0px 15px 0px 15px;
-      border-radius: 0px 7px 7px 0px;
+      border-radius: 0px 2px 2px 0px;
       border: none;
       cursor: pointer;
       display: flex;
@@ -111,21 +121,50 @@ main {
       }
 
       &:hover {
-        background-color: $darkbeige;
+        background-color: darken($purple, 15%);
       }
     }
+  }
+
+  .content-wrapper {
+    font-size: 1.2rem;
+    font-weight: 100;
+     
+    .name {
+      font-size: 2rem;
+      font-weight: 300;
+    }
+
+    // .origin {
+    //   font-size: 1.7rem;
+    //   font-weight: 300;
+    // }
+
+    // .temperament {
+    //   font-size: 1.7rem;
+    //   font-weight: 300;
+    // }
+
+    // .weight {
+    //   font-size: 1.7rem;
+    //   font-weight: 300;
+    // }
+
   }
 }
 
 /* Favourites page */
 .favourites-wrapper {
-  width: 90%;
+  width: 100%;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 
   .cat-card {
     border-radius: 2px;
@@ -136,9 +175,11 @@ main {
     flex-direction: column;
     align-items: center;
     transition: .2s ease-in-out;
+    cursor: pointer;
 
     &:hover {
       box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+      transform: scale(1.1, 1.1);
     }
 
     .trash-image {
@@ -269,6 +310,13 @@ main {
       width: 250px;
     }
   }
+}
+
+/* Thanks page */
+.thanks-wrapper {
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 300;
 }
 
 /* Main page */

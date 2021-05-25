@@ -24,7 +24,7 @@ likeButton.addEventListener('click', () => {
 });
 
 dislikeButton.addEventListener('click', () => {
-    alert('test');
+    alert('Oops! We do not vote against cats here. Cats are cool. Try again!');
 });
 
 getRandomImage(catImage);

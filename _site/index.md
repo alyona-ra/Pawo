@@ -8,13 +8,9 @@ layout: base
   </section>
   <article class="about-text">
     <h1>What Is Pawo?</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea id ab sit recusandae voluptatem officia repellendus
-      quas minus autem accusantium, blanditiis culpa eos cupiditate itaque quod tempora iure non perspiciatis! Omnis
-      consequuntur minus consequatur aliquid nesciunt assumenda perspiciatis nobis quae, maiores reiciendis debitis
-      vitae, voluptate accusamus, commodi numquam consectetur ipsum dolorem. Nostrum sunt quibusdam itaque, ullam earum
-      quis excepturi velit maiores cupiditate similique repudiandae voluptatum impedit ipsum deserunt omnis sapiente
-      animi qui. Inventore ad harum blanditiis autem, libero ullam itaque eius tenetur et architecto totam ab qui
-      nesciunt cumque magni velit reiciendis praesentium necessitatibus, sapiente ipsa! Incidunt ratione quae possimus.
+    <p>Pawo was created to help spread the love for furry. Why cats? They’re ergonomically designed and fit together beautifully. They are easily pleased and don’t always need a fancy cat bed to be able to relax. They are masters in the art of chill. They’re not afraid to tell you what they want. They’re the perfect sofa accessory.
+    </p>
+    <p>On the website, you can learn more about different breeds – just click on the Breeds link. Don't forget to enjoy our random cat pictures. You can find your liked pictures under the Favorites. The ones that you voted for appears on the Votes page.
     </p>
   </article>
 

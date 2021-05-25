@@ -1,6 +1,6 @@
 ---
 eleventyNavigation:
-    key: Favourites
+    key: Favorites
     parent: main
 layout: base
 ---

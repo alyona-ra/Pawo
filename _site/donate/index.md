@@ -7,7 +7,7 @@ layout: base
 
 <div class="donate-text-wrapper">
   <h1>Donate</h1>
-  <p>Donate to Pawo means support those who can't do it themselves.</p>
+  <p>Donate to Pawo means support those who can't do it themselves. Each month all donations will go to a new organization.</p>
 </div>
 
 <div class="donate-wrapper">

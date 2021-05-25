@@ -348,12 +348,30 @@ main {
 }
 
 /* Thanks page */
-.thanks-wrapper {
+.thanks-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 2.5rem;
+  padding: 0 50px;
+  margin-top: 20px;
+}
+
+.thanks-content-wrapper h1 {
+  font-size: 4rem;
   font-weight: 300;
+}
+
+.thanks-content-wrapper .image-wrapper img {
+  width: 450px;
+  height: auto;
+  margin-bottom: 50px;
 }
 
 /* Main page */

@@ -63,19 +63,40 @@ async function searchForBreedsByName(name) {
 
   const breedOrigin = document.createElement('p');
   breedOrigin.classList.add('origin');
-  breedOrigin.textContent = `Country: ${json[0].origin}`;
 
-  const breedLifeSpan = document.createElement('p');
-  breedLifeSpan.classList.add('lifespan');
-  breedLifeSpan.textContent = `Life Span: ${json[0].life_span} years`;
+  const originSpan = document.createElement('span');
+  originSpan.classList.add('style-span');
+  originSpan.textContent = 'Country of origin: ';
+  breedOrigin.appendChild(originSpan);
+  breedOrigin.appendChild(document.createTextNode(`${json[0].origin}`))
 
-  const breedTemperament = document.createElement('p');
-  breedTemperament.classList.add('temperament');
-  breedTemperament.textContent = `Temperament: ${json[0].temperament}`;
+    const breedLifeSpan = document.createElement('p');
+    breedLifeSpan.classList.add('lifespan');
+
+    const breedSpan = document.createElement('span');
+    breedSpan.classList.add('style-span');
+    breedSpan.textContent = 'Life Span: ';
+    breedLifeSpan.appendChild(breedSpan);
+    breedLifeSpan.appendChild(document.createTextNode(`${json[0].life_span} years`));
+
+    const breedTemperament = document.createElement('p');
+    breedTemperament.classList.add('temperament');
+
+    const temperamentSpan = document.createElement('span');
+    temperamentSpan.classList.add('style-span');
+    temperamentSpan.textContent = 'Temperament: ';
+    breedTemperament.appendChild(temperamentSpan);
+    breedTemperament.appendChild(document.createTextNode(`${json[0].temperament}`));
 
   const breedWeight = document.createElement('p');
   breedWeight.classList.add('weight');
-  breedWeight.textContent = `Average weight: ${json[0].weight.metric} kg`;
+
+  const weightSpan = document.createElement('span');
+  weightSpan.classList.add('style-span');
+  weightSpan.textContent = 'Average weight: ';
+  breedWeight.appendChild(weightSpan);
+  breedWeight.appendChild(document.createTextNode(`${json[0].weight.metric} kg`));
+
 
   const breedLink = document.createElement('a');
   breedLink.classList.add('link');

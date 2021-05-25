@@ -37,7 +37,7 @@ body {
   min-height: 100vh;
 }
 
-/* Padding is necessary because of footer */
+/* Padding is necessary because of the footer */
 main {
   padding-bottom: 250px;
 }
@@ -98,14 +98,15 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-bottom: 20px;
 }
 
 .breeds-wrapper .input-wrapper {
   margin-top: 30px;
+  margin-left: auto;
   max-width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,6 +163,18 @@ main {
 .breeds-wrapper .content-wrapper .name {
   font-size: 2rem;
   font-weight: 300;
+  text-transform: uppercase;
+}
+
+.breeds-wrapper .content-wrapper .style-span {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.breeds-wrapper .content-wrapper .link {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #c3aab0;
 }
 
 /* Favourites page */

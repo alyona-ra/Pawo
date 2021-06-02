@@ -39,10 +39,25 @@ footer .links-wrapper .contact .email {
   margin-top: 0;
 }
 
-footer .links-wrapper .social {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+footer .links-wrapper .credit .credit-text {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+footer .links-wrapper .credit p {
+  margin: 5px 0;
+}
+
+footer .links-wrapper .credit a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  margin-left: 5px;
+}
+
+footer .links-wrapper .credit a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 500px) {

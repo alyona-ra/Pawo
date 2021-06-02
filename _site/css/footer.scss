@@ -36,8 +36,27 @@ footer {
        }
     }
 
-    .social {
-      align-self: center;
+    .credit {
+      .credit-text {
+        font-size: 1.1rem;
+        font-weight: 300;
+        margin-bottom: 0;
+      }
+
+      p {
+        margin: 5px 0;
+      }
+
+      a {
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+        margin-left: 5px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 }

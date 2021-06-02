@@ -8,7 +8,7 @@ layout: base
   </section>
   <article class="about-text">
     <h1>What Is Pawo?</h1>
-    <p>Pawo was created to help spread the love for furry. Why cats? They’re ergonomically designed and fit together beautifully. They are easily pleased and don’t always need a fancy cat bed to be able to relax. They are masters in the art of chill. They’re not afraid to tell you what they want. They’re the perfect sofa accessory.
+    <p>Pawo was created to help spread the love for furry. Why cats? They beautifully complement any human being. They don't require luxury furniture to relax, and they are easy to please. They have no equal in the art of chill. They are never afraid to show their temper as they will always tell you what they want whether it's the right time or not. In addition, they are the perfect apartment accessory for everybody.
     </p>
     <p>On the website, you can learn more about different breeds – just click on the Breeds link. Don't forget to enjoy our random cat pictures. You can find your liked pictures under the Favorites. The ones that you voted for appears on the Votes page.
     </p>
